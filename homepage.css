@@ -1,0 +1,24 @@
+*
+{
+  font-family: serif, Times New Roman, Georgia;
+  text-align: center;
+  color: black;
+}
+
+/* footer styling */
+footer
+{
+   position: static;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding-top: 35px;
+   padding-bottom: 30px;
+}
+.footer-text
+{
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}

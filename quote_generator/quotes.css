@@ -1,0 +1,27 @@
+*
+{
+  font-family: serif, Times New Roman, Georgia;
+  text-align: center;
+  color: black;
+}
+.button
+{
+  background-color: pink;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin: auto;
+  width: 50%;
+  border: 0px;
+  padding: 10px;
+}
+div
+{
+  background-color: purple;
+  width: 50%;
+  border: 0px;
+  padding: 50px;
+  margin: auto;
+}

@@ -1,0 +1,267 @@
+/* overall page styling */
+*
+{
+  font-family: serif, Times New Roman, Georgia;
+  text-align: center;
+  color: black;
+}
+html
+{
+  scroll-behavior: smooth;
+}
+
+/* back to top styling */
+/* modified from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top */
+#myBtn
+{
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(222, 202, 176);
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn:hover
+{
+  background-color: rgb(169, 169, 169);
+  color: white;
+}
+    @media screen and (max-width: 768px)
+    {
+      #myBtn
+      {
+        border: 2px solid black;
+        background-color: rgb(169, 169, 169);
+        color: white;
+      }
+      #myBtn:hover
+      {
+        background-color: rgb(222, 202, 176);
+        color: black;
+      }
+    }
+
+/* navbar styling */
+/* modified from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav */
+.topnav
+{
+  overflow: hidden;
+  background-color: black;
+}
+.topnav a
+{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover
+{
+  background-color: rgb(222, 202, 176);
+  color: black;
+}
+.topnav .icon
+{
+  display: none;
+}
+    @media screen and (max-width: 768px)
+    {
+      .topnav a:not(:first-child)
+      {
+        display: none;
+      }
+      .topnav a.icon
+      {
+        float: right;
+        display: block;
+      }
+      .topnav.responsive
+      {
+        position: relative;
+      }
+      .topnav.responsive .icon
+      {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a
+      {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      #hamburger
+      {
+          color: white;
+      }
+    }
+
+/* slideshow styling */
+/* modified from https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_carousel */
+/* Make the image fully responsive */
+.carousel-inner img
+{
+  width: 100%;
+  height: 100%;
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: pink;
+}
+
+.carousel-item:hover .overlay
+{
+  opacity: 0.5;
+}
+
+.text
+{
+  color: black;
+  font-size: 250%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+    @media screen and (max-width: 768px)
+    {
+      .text
+      {
+        font-size: 150%;
+      }
+    }
+
+
+/* articles styling */
+.article-heading
+{
+  font-size: 500%;
+}
+.article-image
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+.article-title
+{
+  background-color: rgb(222, 202, 176);
+  width: 50%;
+  border: 0px;
+  padding: 10px;
+  margin: auto;
+  font-size: 20px;
+}
+.article a
+{
+  color: rgb(0, 0, 175);
+  font-size: 20px;
+}
+    @media screen and (max-width: 768px)
+    {
+      .article-heading
+      {
+        font-size: 400%;
+      }
+      .article-image
+      {
+        width: 90%;
+      }
+      .article-title
+      {
+        width: 70%;
+      }
+      .article-title p
+      {
+        font-size: 70%;
+      }
+    }
+
+
+/* ABOUT US and JOIN US styling */
+.other
+{
+  background-color: black;
+  padding: 50px;
+  width: auto;
+  margin: 30px 0px 0px 0px;
+}
+.white-text
+{
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  width: 70%;
+}
+    @media screen and (max-width: 768px)
+    {
+      .white-text
+      {
+        width: 90%;
+      }
+    }
+/* modified from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_newsletter copied and modified */
+form
+{
+  border: 0px;
+}
+input[type=text], input[type=submit]
+{
+  width: 70%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+input[type=submit]
+{
+  background-color: rgb(222, 202, 176);
+  color: black;
+  border: none;
+}
+input[type=submit]:hover
+{
+  opacity: 0.8;
+}
+
+
+/* footer styling */
+footer
+{
+   position: static;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding-top: 35px;
+   padding-bottom: 30px;
+}
+.footer-text
+{
+  color: white;
+  padding: 15px 0;
+}
